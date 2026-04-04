@@ -9,7 +9,7 @@ const homeNav = () => {
     const homePara1 = document.createElement("p");
     homePara1.textContent = "Here at Noah's Ark, bring your significant other or your friend but bring big appetites because all meals come with 2 of everything!"
     const homePara2 = document.createElement("p");
-    homePara2.textContent = "Choose 2 each of appetizers, main courses, and desserts. See our menu page for the options."
+    homePara2.textContent = "Choose 2 each of appetizers, entrees, and desserts. See our menu page for the options. All meals are $60 per group of 2."
     const homePara3 = document.createElement("p");
     homePara3.textContent = "Stay til you're full, but unlike in Noah's day it won't take 40 days and 40 nights."
     homeContent.appendChild(homePara1);

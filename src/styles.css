@@ -30,8 +30,8 @@ body {
     height: 1fr;
     width: 1fr;
     margin: 10px;
-    display: grid;
-    grid-template-rows: 1fr 4fr;
+    display: flex;
+    flex-direction: column;
     gap: 50px;
 }
 
@@ -39,6 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 #home:hover, #menu:hover,
@@ -64,6 +65,34 @@ body {
 
 .home-content p,
 .menu-content p {
-    margin: 20px 0;
+    margin-top: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.menu-content h2, .menu-content h3 {
+    text-align: center;
+}
+
+.appetizers-container,
+.entrees-container,
+.desserts-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.appetizers-container {
+    color: green;
+}
+
+.entrees-container {
+    color: blue;
+}
+
+.desserts-container {
+    color: gold;
 }
