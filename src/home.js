@@ -1,9 +1,6 @@
-import "./styles.css";
-import homeNav from "./home.js";
-import menuNav from "./menu.js";
-
-(function () {
+const homeNav = () => {
     const contentContainer = document.querySelector("#content");
+    contentContainer.replaceChildren();
     const welcomeHeading = document.createElement("h1");
     welcomeHeading.classList.add("welcome-heading");
     welcomeHeading.textContent = "Welcome To Noah's Ark Restaurant";
@@ -20,13 +17,6 @@ import menuNav from "./menu.js";
     homeContent.appendChild(homePara3);
     contentContainer.appendChild(welcomeHeading);
     contentContainer.appendChild(homeContent);
-})();
+};
 
-const homeBtn = document.querySelector("#home");
-const menuBtn = document.querySelector("#menu");
-homeBtn.addEventListener("click", () => {
-    homeNav();
-});
-menuBtn.addEventListener("click", () => {
-    menuNav();
-});
+export default homeNav;
