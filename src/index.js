@@ -1,6 +1,8 @@
 import "./styles.css";
 import homeNav from "./home.js";
 import menuNav from "./menu.js";
+import aboutNav from "./about.js";
+import reviewsNav from "./reviews.js";
 
 (function () {
     const contentContainer = document.querySelector("#content");
@@ -24,9 +26,17 @@ import menuNav from "./menu.js";
 
 const homeBtn = document.querySelector("#home");
 const menuBtn = document.querySelector("#menu");
+const aboutBtn = document.querySelector("#about");
+const reviewsBtn = document.querySelector("#reviews");
 homeBtn.addEventListener("click", () => {
     homeNav();
 });
 menuBtn.addEventListener("click", () => {
     menuNav();
+});
+aboutBtn.addEventListener("click", () => {
+    aboutNav();
+});
+reviewsBtn.addEventListener("click", () => {
+    reviewsNav();
 });

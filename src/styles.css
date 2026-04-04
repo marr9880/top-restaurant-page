@@ -57,42 +57,55 @@ body {
 }
 
 .home-content,
-.menu-content {
+.menu-content,
+.about-content,
+.reviews-content {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
     font-weight: 200;
-}
-
-.home-content p,
-.menu-content p {
-    margin-top: 20px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
 }
 
-.menu-content h2, .menu-content h3 {
+.home-content p,
+.menu-content p,
+.about-content p,
+.reviews-content p {
+    margin-top: 20px;
     text-align: center;
+}
+
+.menu-content h2, .menu-content h3,
+.about-content h3 {
+    text-align: center;
+}
+
+.menu-content h3 {
+    text-decoration: underline;
 }
 
 .appetizers-container,
 .entrees-container,
-.desserts-container {
+.desserts-container,
+.chef, .manager, .wait-staff {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
 }
 
-.appetizers-container {
+.appetizers-container, .chef {
     color: green;
+    border: solid 5px green;
 }
 
-.entrees-container {
-    color: blue;
+.entrees-container, .manager {
+    color: rgb(8, 8, 73);
+    border: solid 5px rgb(8, 8, 73);
 }
 
-.desserts-container {
+.desserts-container, .wait-staff {
     color: gold;
+    border: solid 5px gold;
 }
